@@ -32,7 +32,7 @@ public class DemoController {
 			userResp=	ids.create(user);
 		} catch (EmailExisteException e) {
 			log.error("Email existe en Base de Datos");
-			throw new EmailExisteException("El correo ya existe",HttpStatus.BAD_REQUEST.value(),"/usuario");
+			throw new EmailExisteException();
 		}
 		
 			return new ResponseEntity<DTOUsuarioResponse>(userResp,HttpStatus.CREATED);
