@@ -1,2 +1,2 @@
-# demoBCI
-Proyecto Java para Evaluacion BCI 
+# DemoBCI
+Git demo BCI
